@@ -1,0 +1,19 @@
+@mixin media-query-min($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+@mixin media-query-max($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin media-query-min-max($minBreakpoint, $maxBreakpoint) {
+  $minWidth: map-get($breakpoints, $minBreakpoint);
+  $maxWidth: map-get($breakpoints, $maxBreakpoint);
+  @media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+    @content;
+  }
+}
