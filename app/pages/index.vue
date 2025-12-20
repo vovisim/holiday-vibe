@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import mainImg from "@/assets/img/main.png";
 import { PartyPopper } from "lucide-vue-next";
+import { type IEntertainment } from "#shared/entities/Entertainment";
+import { Entertainments } from "#shared/constants/entertainments/entertainments";
+import firstImg from "@/assets/img/entertainments/1.png";
+import secondImg from "@/assets/img/entertainments/2.png";
+import thirdImg from "@/assets/img/entertainments/3.png";
 
 definePageMeta({
   name: "index",
@@ -8,6 +13,8 @@ definePageMeta({
 useHead({
   title: "Главная - Holiday Vibe",
 });
+
+const entertainments = ref<IEntertainment[]>(Entertainments);
 </script>
 
 <template>
@@ -63,9 +70,7 @@ useHead({
           Все, что нужно для идеального праздника, собрано в одном месте.
         </div>
       </div>
-      <div class="flex gap-3">
-        <EntertainmentCard />
-      </div>
+      <EntertainmentList />
     </div>
   </main>
 </template>

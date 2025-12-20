@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import firstImg from "@/assets/img/entertainments/1.png";
+import secondImg from "@/assets/img/entertainments/2.png";
+import thirdImg from "@/assets/img/entertainments/3.png";
+import type { IEntertainment } from "#shared/entities/Entertainment";
+import { Entertainments } from "#shared/constants/entertainments/entertainments";
+
+const entertainments = ref<IEntertainment[]>(Entertainments);
+</script>
+
+<template>
+  <div class="flex gap-3">
+    <EntertainmentCard :entertainment="entertainments[0]">
+      <template #img>
+        <img :src="firstImg" alt="" />
+      </template>
+    </EntertainmentCard>
+    <EntertainmentCard :entertainment="entertainments[1]">
+      <template #img>
+        <img :src="secondImg" alt="" />
+      </template> </EntertainmentCard
+    ><EntertainmentCard :entertainment="entertainments[2]">
+      <template #img>
+        <img :src="thirdImg" alt="" />
+      </template>
+    </EntertainmentCard>
+  </div>
+</template>

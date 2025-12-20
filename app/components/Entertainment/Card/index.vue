@@ -4,15 +4,13 @@ import { type IEntertainment } from "#shared/entities/Entertainment";
 const { entertainment } = defineProps<{
   entertainment: IEntertainment;
 }>();
-
-const imageUrl = computed(() => {
-  return new URL(`@/assets/img/${entertainment.img}`, import.meta.url).href;
-});
 </script>
 
 <template>
   <div class="grid gap-5">
-    <img :src="imageUrl" alt="img" />
+    <div class="">
+      <slot name="img"></slot>
+    </div>
     <div class="grid gap-3">
       <div class="flex justify-between">
         <div class="">
