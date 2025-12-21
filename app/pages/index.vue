@@ -2,7 +2,7 @@
 import mainImg from "@/assets/img/main.png";
 import { PartyPopper, Mail } from "lucide-vue-next";
 import { type IEntertainment } from "#shared/entities/Entertainment";
-import { Entertainments } from "#shared/constants/entertainments/Entertainments";
+import { Entertainments } from "#shared/constants/Entertainments/Entertainments";
 
 definePageMeta({
   name: "index",
