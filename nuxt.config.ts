@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@vueuse/nuxt",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
   ],
   css: ["@/assets/scss/main.scss", "@/assets/scss/tailwind.css"],
   shadcn: {
