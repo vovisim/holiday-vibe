@@ -3,7 +3,7 @@ import firstImg from "@/assets/img/entertainments/1.png";
 import secondImg from "@/assets/img/entertainments/2.png";
 import thirdImg from "@/assets/img/entertainments/3.png";
 import type { IEntertainment } from "#shared/entities/Entertainment";
-import { Entertainments } from "#shared/constants/entertainments/entertainments";
+import { Entertainments } from "#shared/constants/entertainments/Entertainments";
 
 const entertainments = ref<IEntertainment[]>(Entertainments);
 </script>
