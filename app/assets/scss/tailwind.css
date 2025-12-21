@@ -40,6 +40,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-surface: #2A1A1A
 }
 
 :root {
@@ -121,8 +122,22 @@
   }
 }
 
+@layer base {
+  .secondary-text {
+    color: var(--color-gray-400);
+    font-size: var(--text-lg);
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+    font-weight: bold;
+  }
+}
+
 @layer utilities {
   .rounded-picture {
     border-radius: 30px;
   }
+
+
 }

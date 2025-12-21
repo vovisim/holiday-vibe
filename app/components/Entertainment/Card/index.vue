@@ -7,9 +7,11 @@ const { entertainment } = defineProps<{
 </script>
 
 <template>
-  <div class="grid gap-5">
-    <div class="">
-      <slot name="img"></slot>
+  <div
+    class="group flex flex-col gap-4 rounded-2xl border border-gray-400/30 bg-surface p-4 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+  >
+    <div class="h-[300px] overflow-hidden rounded-xl">
+      <slot name="img" />
     </div>
     <div class="grid gap-3">
       <div class="flex justify-between">

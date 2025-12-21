@@ -9,19 +9,20 @@ const entertainments = ref<IEntertainment[]>(Entertainments);
 </script>
 
 <template>
-  <div class="flex gap-3">
-    <EntertainmentCard :entertainment="entertainments[0]">
+  <div class="flex flex-row gap-3">
+    <EntertainmentCard class="flex-1" :entertainment="entertainments[0]!">
       <template #img>
-        <img :src="firstImg" alt="" />
+        <img :src="firstImg" alt="" class="h-full w-full object-cover" />
       </template>
     </EntertainmentCard>
-    <EntertainmentCard :entertainment="entertainments[1]">
+    <EntertainmentCard class="flex-1" :entertainment="entertainments[1]!">
       <template #img>
-        <img :src="secondImg" alt="" />
-      </template> </EntertainmentCard
-    ><EntertainmentCard :entertainment="entertainments[2]">
+        <img :src="secondImg" alt="" class="h-full w-full object-cover" />
+      </template>
+    </EntertainmentCard>
+    <EntertainmentCard class="flex-1" :entertainment="entertainments[2]!">
       <template #img>
-        <img :src="thirdImg" alt="" />
+        <img :src="thirdImg" alt="" class="h-full w-full object-cover" />
       </template>
     </EntertainmentCard>
   </div>
