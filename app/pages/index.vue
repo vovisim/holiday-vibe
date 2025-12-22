@@ -26,7 +26,7 @@ const entertainments = ref<IEntertainment[]>(Entertainments);
         class="flex gap-2 text-primary p-2 border-primary/50 border bg-primary/15 backdrop-blur-sm w-max rounded-full text-xs"
       >
         <PartyPopper :size="16" />
-        <span>2024 is coming</span>
+        <span>2026 is coming</span>
       </div>
       <h1 class="sm:text-7xl text-4xl drop-shadow-sm font-extrabold grid">
         <span>Пусть начинается</span>
